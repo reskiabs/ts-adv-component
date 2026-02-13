@@ -1,4 +1,5 @@
 import Button from "./components/Button";
+import Container from "./components/Container";
 import Input from "./components/input";
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
           Linked
         </Button>
       </p>
+
+      <Container as={Button} />
     </main>
   );
 }
