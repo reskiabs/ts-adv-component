@@ -16,7 +16,9 @@ function App() {
         </Button>
       </p>
 
-      <Container as={Button} />
+      <Container as="button" onClick={() => {}} type="button">
+        Submit
+      </Container>
     </main>
   );
 }
