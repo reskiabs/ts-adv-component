@@ -1,11 +1,13 @@
+import { useRef } from "react";
 import Button from "./components/Button";
 import Container from "./components/Container";
-import Input from "./components/input";
+import Input from "./components/Input";
 
 function App() {
+  const input = useRef<HTMLInputElement>(null);
   return (
     <main>
-      <Input label="Your Name" id="name" type="text" />
+      <Input label="Your Name" id="name" type="text" ref={input} />
       <Input label="Email" id="email" type="email" />
       <p>
         <Button el="button">Submit</Button>
@@ -17,7 +19,7 @@ function App() {
       </p>
 
       <Container as="button" onClick={() => {}} type="button">
-        Submit
+        <h1>Container</h1>
       </Container>
     </main>
   );
