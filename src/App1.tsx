@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import Button from "./components/Button";
+import Container from "./components/Container";
 import Form, { type FormHandle } from "./components/Form";
 import Input from "./components/Input";
 
@@ -19,6 +20,14 @@ function App() {
           <Button el="button">Submit</Button>
         </p>
       </Form>
+
+      <Container as="button" onClick={() => {}}>
+        Click me
+      </Container>
+
+      <Container as="a" href="/home">
+        Go home
+      </Container>
     </main>
   );
 }
